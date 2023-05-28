@@ -1,6 +1,6 @@
 import random
 alunos = []
-for _ in range(5):
+for _ in range(3):
     while True:
         try:
             alunos.append(input('Digite o nome do aluno: '))
