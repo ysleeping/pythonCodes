@@ -1,12 +1,12 @@
 import random
-turma = []
-aluno = input('Digite o nome do aluno: ')
-turma.append(aluno)
-aluno1 = input('Digite o nome do aluno: ')
-turma.append(aluno1)
-aluno2 = input('Digite o nome do aluno: ')
-turma.append(aluno2)
+alunos = []
+for _  in range(5):
+    while True:
+        try:
+            alunos.append(input('Digite o nome do aluno: '))
+            break
+        except ValueError:
+            print('Digite algo válido')
 
-elemento = random.choice(turma)
+print(f'Os alunos escolhidos para limpar a louça essa semana foram: {random.sample(alunos, 3)}')
 
-print(f'O aluno escolhido para limpar a louça da vez foi: {elemento}')
