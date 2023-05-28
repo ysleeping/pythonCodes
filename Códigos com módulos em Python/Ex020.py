@@ -7,6 +7,4 @@ for _ in range(5):
             break
         except ValueError:
             print('Digite algo válido')
-
 print(f'Os alunos escolhidos para limpar a louça essa semana foram: {random.sample(alunos, 3)}')
-
